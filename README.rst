@@ -29,8 +29,13 @@ To start a simple image build for an Udoo Neo full board::
 
   $ cd poky
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
-  $ ${EDITOR} conf/local.conf             # set MACHINE to XXXX
+   see note, copy meta-small-arm-extra/conf,{local.conf.neo,bblayers.conf.neo}
+  $ ${EDITOR} conf/local.conf             # set MACHINE to udooneo
   $ bitbake core-image-minimal
+
+.. note:: Use the example config files in meta-small-arm-extra/conf,
+          since the meta-udoo images still try to install vendor graphics
+          for the old vendor kernels.
 
 You can use any directory (build-dir above) to host your build.  The above commands
 will build an image for nitrogen6x using the udoo-neo BSP machine config and the

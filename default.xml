@@ -19,7 +19,7 @@
   <project remote="freescale" revision="morty" name="meta-freescale-distro" path="poky/meta-freescale-distro"/>
   <project remote="meta-sla" revision="morty" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
-  <project remote="graugans" revision="morty" name="meta-udoo" path="poky/meta-udoo"/>
+  <project remote="meta-sla" revision="morty-4.1" name="meta-udoo" path="poky/meta-udoo"/>
   <project remote="meta-qt5" revision="morty" name="meta-qt5" path="poky/meta-qt5"/>
 
 </manifest>
